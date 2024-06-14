@@ -43,9 +43,9 @@ Le fichier **lance_astro.py** donne des exemples d'appel aux différentes foncti
 
 ### Les données initiales du "modèle Newton"
 
-Le fichier **Planetes.csv** peut être généré "à la main" ou via la fonction **astro.planetes**. Il comprend la liste des planètes prises en compte dans le "modèle Newton". La colonne "id" est un identifiant que l'on peut répurérer avec la fonction **astro.liste_id**.
+Le fichier **Planetes.csv** peut être généré "à la main" ou via la fonction **astro.planetes()**. Il comprend la liste des planètes prises en compte dans le "modèle Newton". La colonne "id" est un identifiant que l'on peut répurérer avec la fonction **astro.liste_id()**.
 ```
-import astro
+>>> import astro
 >>> astro.planetes(Planetes='Planetes.csv')
        Nom            mu      units   id
 0   Soleil  1.327124e+11  km^3 s^-2   10
@@ -58,5 +58,22 @@ import astro
 7  Saturne  3.794058e+07  km^3 s^-2    6
 8   Uranus  5.794556e+06  km^3 s^-2    7
 9  Neptune  6.836527e+06  km^3 s^-2    8
+```
+
+### Les éphémérides du JPL
+
+```
+>>> import astro
+>>> astro.convert_req_jpl_to_csv(Planetes='Planetes.csv', debut='2020-01-01 00:00:00', fin='2040-01-01 00:00:00', pas='8 h')
+Données pour Soleil
+Données pour Mercure
+Données pour Venus
+Données pour Terre
+Données pour Lune
+Données pour Mars
+Données pour Jupiter
+Données pour Saturne
+Données pour Uranus
+Données pour Neptune
 ```
 
