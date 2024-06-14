@@ -43,7 +43,7 @@ Le fichier **lance_astro.py** donne des exemples d'appel aux différentes foncti
 
 ### Les données initiales du "modèle Newton"
 
-Le fichier **Planetes.csv** peut être généré "à la main" ou via la fonction **astro.planetes()**. Il comprend la liste des planètes prises en compte dans le "modèle Newton". La colonne "id" est un identifiant que l'on peut répurérer avec la fonction **astro.liste_id()**.
+Le fichier **Planetes.csv** peut être généré "à la main" ou via la fonction **astro.planetes()**. Il comprend la liste des planètes prises en compte dans le "modèle Newton". La colonne "id" est un identifiant que l'on peut récupérer avec la fonction **astro.liste_id()**.
 ```
 >>> import astro
 >>> astro.planetes(Planetes='Planetes.csv')
