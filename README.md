@@ -6,7 +6,7 @@ Aujourd'hui, les calculs d'éphémérides pour les planètes du système solaire
 
 Parmi les modèles existants, citons celui de [l’**I**nstitut de **M**écanique **C**éleste et de **C**alcul des **E**phémérides (**IMCCE**)](https://www.imcce.fr/institut/presentation/) : **I**ntégrateur **N**umérique **P**lanétaire de l'**O**bservatoire de **P**aris ([modèle **INPOP**](https://www.imcce.fr/inpop)). Citons aussi celui du [**J**et **P**ropulsion **L**aboratory (**JPL**)](https://www.jpl.nasa.gov/) : **D**eveloppement **E**phemeris ([modèle **DE**](https://ssd.jpl.nasa.gov/)).
 
-Le modèle du JPL étant associé à une [API](https://ssd-api.jpl.nasa.gov/doc/horizons.html) donnant facilement accès aux éphémérides, il sera utilisé ici pour effectuer des comparaisons avec un "modèle Newton", pour illustrer la modélisation par équation d'état et l'intégration numérique des équations différentielles ordinaires.
+Le modèle du JPL étant associé à une [API](https://ssd-api.jpl.nasa.gov/doc/horizons.html) donnant facilement accès aux éphémérides, il sera utilisé ici pour effectuer des comparaisons avec un "modèle Newton", qui illustrera la modélisation par équation d'état et l'intégration numérique des équations différentielles ordinaires.
 
 ## Un "modèle Newton" simple
 
