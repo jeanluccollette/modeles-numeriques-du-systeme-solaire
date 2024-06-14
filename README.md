@@ -101,7 +101,7 @@ Les informations récupérées à chaque instant précisé dans la colonne **DAT
 
 ### Les simulations numériques
 
-La méthode de résolution numérique de l'équation différentielle associée au "modèle Newton" peut alors être lancée. Les conditions initiales sont obtenues en considérant la première ligne de tous les fichiers **<planetes>.csv**. Le pas de calcul est constant et vaut le pas choisi pour ces fichiers lors de leur téléchargement. La méthode peut être "rk4" ou "rk8" (voir le fichier astro.py pour les détails).
+La méthode de résolution numérique de l'équation différentielle associée au "modèle Newton" peut alors être lancée. Les conditions initiales sont obtenues en considérant la première ligne de tous les fichiers **\<planete\>.csv**. Le pas de calcul est constant et vaut le pas choisi pour ces fichiers lors de leur téléchargement. La méthode peut être "rk4" ou "rk8" (voir le fichier astro.py pour les détails).
 
 ```
 >>> astro.simu_systsol_save(Planetes='Planetes.csv', methode='rk8')
