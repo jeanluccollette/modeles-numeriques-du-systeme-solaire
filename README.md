@@ -39,5 +39,24 @@ Dans une console Python, il suffit d'importer le module "astro" avec la ligne ci
 import astro
 ```
 
-Le fichier **lance_astro.py"" donne des exemples d'appel aux différentes fonctions disponibles dans ce module.
+Le fichier **lance_astro.py** donne des exemples d'appel aux différentes fonctions disponibles dans ce module.
+
+### Les données initiales du "modèle Newton"
+
+Le fichier **Planetes.csv** peut être généré "à la main" ou via la fonction **astro.planetes**. Il comprend la liste des planètes prises en compte dans le "modèle Newton". La colonne "id" est un identifiant que l'on peut répurérer avec la fonction **astro.liste_id**.
+```
+import astro
+>>> astro.planetes(Planetes='Planetes.csv')
+       Nom            mu      units   id
+0   Soleil  1.327124e+11  km^3 s^-2   10
+1  Mercure  2.203187e+04  km^3 s^-2    1
+2    Venus  3.248586e+05  km^3 s^-2    2
+3    Terre  3.986004e+05  km^3 s^-2  399
+4     Lune  4.902800e+03  km^3 s^-2  301
+5     Mars  4.282838e+04  km^3 s^-2    4
+6  Jupiter  1.267128e+08  km^3 s^-2    5
+7  Saturne  3.794058e+07  km^3 s^-2    6
+8   Uranus  5.794556e+06  km^3 s^-2    7
+9  Neptune  6.836527e+06  km^3 s^-2    8
+```
 
