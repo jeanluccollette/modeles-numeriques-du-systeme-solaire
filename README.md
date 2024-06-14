@@ -62,7 +62,7 @@ Le fichier **Planetes.csv** peut être généré "à la main" ou via la fonction
 
 ### Les éphémérides du JPL
 
-Via des requêtes internet, les données relatives aux planètes présentes dans le fichier **Planetes.csv** sont téléchargées, puis stockées dans des fichiers **<planete>.csv**. On précise les dates de début et de fin, ainsi que le pas temporel.
+Via des requêtes internet, les données relatives aux planètes présentes dans le fichier **Planetes.csv** sont téléchargées, puis stockées dans des fichiers **\<planete\>.csv**. On précise les dates de début et de fin, ainsi que le pas temporel.
 
 ```
 >>> import astro
