@@ -138,7 +138,7 @@ La trajectoire simulée et les écarts à la trajectoire fournie par le JPL sont
 
 #### Comparaison sur les paramètres orbitaux
 
-On remarquera l'écart de 8,6 secondes d'arc sur la longitude du périhélie de Mercure, au bout de 20 ans. Cet écart est alors de 43 secondes d'arc sur 100 ans, ce qui correspond bien à l'écart constaté par Urbain le Verrier, entre les prédictions d'un modèle fondé sur les lois de Newton et l'observation.
+On remarquera l'écart de 8,6 secondes d'arc sur la longitude du périhélie de Mercure, au bout de 20 ans. Cet écart est alors de 43 secondes d'arc sur 100 ans, ce qui correspond bien à l'écart qu'avait constaté Urbain le Verrier, entre les prédictions d'un modèle fondé sur les lois de Newton et l'observation.
 
 ```
 >>> astro.param_orb_comp(Astre1_a='Soleil', Astre2_a='Mercure', Astre1_b='Soleil_simu', Astre2_b='Mercure_simu',Planetes='Planetes.csv')
