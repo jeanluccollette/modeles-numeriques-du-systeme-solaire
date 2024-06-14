@@ -126,5 +126,12 @@ Les résultats de cette résolution sont stockés dans des fichiers **\<planetes
 
 #### Comparaison sur les trajectoires
 
+```
+>>> astro.compare(Astre1_a='Terre',Astre2_a='Lune',Astre1_b='Terre_simu',Astre2_b='Lune_simu')
+```
+
 #### Comparaison sur les paramètres orbitaux
 
+```
+>>> astro.param_orb_comp(Astre1_a='Soleil', Astre2_a='Mercure', Astre1_b='Soleil_simu', Astre2_b='Mercure_simu',Planetes='Planetes.csv')
+```
