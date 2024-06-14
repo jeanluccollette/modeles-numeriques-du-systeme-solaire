@@ -32,7 +32,7 @@ Dans le dossier **Notebook**, on trouvera le fichier **Systeme_solaire.ipynb**. 
 
 ### Le code
 
-Dans le dossier **Code**, on trouvera le fichier **astro.py** rassemblant toutes les fonctions permettant la récupération des éphémérides du JPL associées au modèle DE, les simulations numériques du "modèle Newton" et les comparaisons entre ces deux modèles.
+Dans le dossier **Code**, on trouvera le fichier **astro.py** rassemblant toutes les fonctions permettant la récupération des éphémérides du **JPL** associées au modèle **DE**, les simulations numériques du "modèle Newton" et les comparaisons entre ces deux modèles.
 
 Dans une console Python, il suffit d'importer le module "astro" avec la ligne ci-dessous.
 ```
@@ -62,6 +62,8 @@ Le fichier **Planetes.csv** peut être généré "à la main" ou via la fonction
 
 ### Les éphémérides du JPL
 
+Via des requêtes internet, les données relatives aux planètes présentes dans le fichier **Planetes.csv** sont téléchargées, puis stockées dans des fichiers **<planete>.csv**. On précise les dates de début et de fin, ainsi que le pas temporel.
+
 ```
 >>> import astro
 >>> astro.convert_req_jpl_to_csv(Planetes='Planetes.csv', debut='2020-01-01 00:00:00', fin='2040-01-01 00:00:00', pas='8 h')
@@ -75,5 +77,25 @@ Données pour Jupiter
 Données pour Saturne
 Données pour Uranus
 Données pour Neptune
+```
+
+Les informations récupérées sont des coordonnées X, Y et Z, exprimées en km. Les vitesses VX, VY et VZ sont exrimées en km/s.
+
+```
+>>> astro.lire_info_csv('Terre.csv')
+              JDTDB                DATES             X             Y             Z         VX        VY        VZ
+0      2.458850e+06  2020-01-01 00:00:00 -2.545334e+07  1.460913e+08  -2712.536258 -29.863382 -5.165822  0.001136
+1      2.458850e+06  2020-01-01 08:00:00 -2.631296e+07  1.459400e+08  -2680.799361 -29.832140 -5.340013  0.001068
+2      2.458850e+06  2020-01-01 16:00:00 -2.717166e+07  1.457837e+08  -2651.026490 -29.799858 -5.513965  0.000999
+3      2.458850e+06  2020-01-02 00:00:00 -2.802942e+07  1.456224e+08  -2623.259867 -29.766539 -5.687670  0.000929
+4      2.458851e+06  2020-01-02 08:00:00 -2.888621e+07  1.454561e+08  -2597.532568 -29.732188 -5.861122  0.000858
+...             ...                  ...           ...           ...           ...        ...       ...       ...
+21911  2.466153e+06  2039-12-30 16:00:00 -2.007063e+07  1.452651e+08 -40698.080428 -29.950605 -4.369779 -0.000406
+21912  2.466154e+06  2039-12-31 00:00:00 -2.093284e+07  1.451368e+08 -40709.007441 -29.924926 -4.543662 -0.000352
+21913  2.466154e+06  2039-12-31 08:00:00 -2.179430e+07  1.450034e+08 -40718.301385 -29.898268 -4.717404 -0.000293
+21914  2.466154e+06  2039-12-31 16:00:00 -2.265497e+07  1.448650e+08 -40725.830298 -29.870632 -4.891003 -0.000229
+21915  2.466154e+06  2040-01-01 00:00:00 -2.351484e+07  1.447217e+08 -40731.467570 -29.842019 -5.064455 -0.000161
+
+[21916 rows x 8 columns]
 ```
 
