@@ -26,7 +26,7 @@ L'objectif est de montrer que la modélisation simplifiée qui est proposée don
 
 ## Les programmes Python
 
-### Le "notebook"
+### Le notebook
 
 Dans le dossier **Notebook**, on trouvera le fichier **Systeme_solaire.ipynb**. Ce fichier est directement utilisable dans **Google Colaboratory**, par exemple. Son exécution génère en effet tous les fichiers de données nécessaires pour effectuer des comparaisons entre les éphémérides délivrées par le JPL et les résultats de simulation du "modèle Newton" proposé.
 
@@ -101,7 +101,8 @@ Les informations récupérées à chaque instant précisé dans la colonne **DAT
 
 ### Les simulations numériques
 
-La méthode de résolution numérique de l'équation différentielle associée au "modèle Newton" peut alors être lancée.
+La méthode de résolution numérique de l'équation différentielle associée au "modèle Newton" peut alors être lancée. Les conditions initiales sont obtenues en considérant la première ligne de tous les fichiers **<planetes>.csv**. Le pas de calcul est constant et vaut le pas choisi pour ces fichiers lors de leur téléchargement. La méthode peut être "rk4" ou "rk8" (voir le fichier astro.py pour les détails).
+
 ```
 >>> astro.simu_systsol_save(Planetes='Planetes.csv', methode='rk8')
 Soleil : 132712440041.2794 km^3 s^-2
@@ -118,4 +119,6 @@ début de la simulation numérique
 fin de la simulation à 0:02:23.666915 (hh:mm:ss.ms)
 >>>
 ```
+
+Les résultats de cette résolution sont stockés dans des fichiers **<planetes>_simu.csv**.
 
