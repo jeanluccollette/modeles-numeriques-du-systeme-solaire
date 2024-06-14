@@ -36,7 +36,7 @@ Dans le dossier **Code**, on trouvera le fichier **astro.py** rassemblant toutes
 
 Dans une console Python, il suffit d'importer le module "astro" avec la ligne ci-dessous.
 ```
-import astro
+>>> import astro
 ```
 
 Le fichier **lance_astro.py** donne des exemples d'appel aux différentes fonctions disponibles dans ce module.
