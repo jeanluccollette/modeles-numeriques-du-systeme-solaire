@@ -79,7 +79,7 @@ Données pour Uranus
 Données pour Neptune
 ```
 
-Les informations récupérées sont des coordonnées X, Y et Z, exprimées en km. Les vitesses VX, VY et VZ sont exrimées en km/s.
+Les informations récupérées à chaque instant précisé dans la colonne **DATES** sont des coordonnées **X**, **Y** et **Z**, exprimées en km. Les vitesses **VX**, **VY** et **VZ** sont exrimées en km/s. La colonne **JDTDB** (Julian Date for Barycentric Dynamical Time) ne sera pas utilisée.
 
 ```
 >>> astro.lire_info_csv('Terre.csv')
