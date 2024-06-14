@@ -131,6 +131,8 @@ Les résultats de cette résolution sont stockés dans des fichiers **\<planetes
 ```
 
 ![](Data/TL_1.png)
+![](Data/TL_2.png)
+![](Data/TL_3.png)
 
 #### Comparaison sur les paramètres orbitaux
 
