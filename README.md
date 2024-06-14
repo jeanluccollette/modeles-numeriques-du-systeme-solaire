@@ -130,7 +130,7 @@ Les résultats de cette résolution sont stockés dans des fichiers **\<planetes
 >>> astro.compare(Astre1_a='Terre',Astre2_a='Lune',Astre1_b='Terre_simu',Astre2_b='Lune_simu')
 ```
 
-![](Data\TL_1.png)
+![](Data/TL_1.png)
 
 #### Comparaison sur les paramètres orbitaux
 
