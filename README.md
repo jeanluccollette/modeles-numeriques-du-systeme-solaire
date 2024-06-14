@@ -139,3 +139,12 @@ Les résultats de cette résolution sont stockés dans des fichiers **\<planetes
 ```
 >>> astro.param_orb_comp(Astre1_a='Soleil', Astre2_a='Mercure', Astre1_b='Soleil_simu', Astre2_b='Mercure_simu',Planetes='Planetes.csv')
 ```
+
+![](Data/SM_1.png)
+![](Data/SM_2.png)
+![](Data/SM_3.png)
+![](Data/SM_4.png)
+![](Data/SM_5.png)
+![](Data/SM_6.png)
+
+
