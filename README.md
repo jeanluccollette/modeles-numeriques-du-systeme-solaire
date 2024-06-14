@@ -6,7 +6,7 @@ Aujourd'hui, les calculs d'éphémérides pour les planètes du système solaire
 
 Parmi les modèles existants, citons celui de [l’**I**nstitut de **M**écanique **C**éleste et de **C**alcul des **E**phémérides (**IMCCE**)](https://www.imcce.fr/institut/presentation/) : **I**ntégrateur **N**umérique **P**lanétaire de l'**O**bservatoire de **P**aris ([modèle **INPOP**](https://www.imcce.fr/inpop)). Citons aussi celui du [**J**et **P**ropulsion **L**aboratory (**JPL**)](https://www.jpl.nasa.gov/) : **D**eveloppement **E**phemeris ([modèle **DE**](https://ssd.jpl.nasa.gov/)).
 
-Le modèle du JPL étant associé à une [API](https://ssd-api.jpl.nasa.gov/doc/horizons.html) donnant facilement accès aux éphémérides, il sera utilisé ici pour effectuer des comparaisons avec un "modèle Newton" 
+Le modèle du JPL étant associé à une [API](https://ssd-api.jpl.nasa.gov/doc/horizons.html) donnant facilement accès aux éphémérides, il sera utilisé ici pour effectuer des comparaisons avec un "modèle Newton", pour illustrer la modélisation par équation d'état et l'intégration numérique des équations différentielles ordinaires.
 
 ## Un "modèle Newton" simple
 
@@ -23,4 +23,10 @@ Ce modèle fait donc appel à la mécanique classique et aux lois de Newton pour
 Le programme de simulation qui résout numériquement l'équation d'état proposée permet de réaliser ensuite des comparaisons avec les [éphémérides fournies par le JPL](https://ssd.jpl.nasa.gov/horizons/app.html#/). Les conditions initiales pour les simulations numériques correspondent à la première ligne des fichiers importés du site du JPL, donc aux positions et vitesses des astres à la date de début choisie. Le pas de calcul pour les simulations numériques est le même que celui choisi pour les fichiers importés, afin de faciliter les comparaisons.
 
 L'objectif est de montrer que la modélisation simplifiée qui est proposée donne cependant des résultats qui restent cohérents avec ces éphémérides très précises du JPL.
+
+## Les programmes Python
+
+### Le "notebook"
+
+Dans le dossier **Notebook**, on trouvera le fichier **Systeme_solaire.ipynb**. Ce fichier est directement utilisable dans **Google Colaboratory**, par exemple. Son exécution génère en effet tous les fichiers de données nécessaires pour effectuer des comparaisons entre les éphémérides délivrées par JPL et les résultats de simulation du "modèle Newton" proposé.
 
