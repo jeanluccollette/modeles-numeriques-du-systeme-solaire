@@ -79,7 +79,7 @@ Données pour Uranus
 Données pour Neptune
 ```
 
-Les informations récupérées à chaque instant précisé dans la colonne **DATES** sont des coordonnées **X**, **Y** et **Z**, exprimées en km. Les vitesses **VX**, **VY** et **VZ** sont exrimées en km/s. La colonne **JDTDB** (Julian Date for Barycentric Dynamical Time) ne sera pas utilisée.
+Les informations récupérées à chaque instant précisé dans la colonne **DATES** sont des coordonnées **X**, **Y** et **Z**, exprimées en km. Les vitesses **VX**, **VY** et **VZ** sont exprimées en km/s. La colonne **JDTDB** (Julian Date for Barycentric Dynamical Time) ne sera pas utilisée.
 
 ```
 >>> astro.lire_info_csv('Terre.csv')
@@ -97,5 +97,25 @@ Les informations récupérées à chaque instant précisé dans la colonne **DAT
 21915  2.466154e+06  2040-01-01 00:00:00 -2.351484e+07  1.447217e+08 -40731.467570 -29.842019 -5.064455 -0.000161
 
 [21916 rows x 8 columns]
+```
+
+### Les simulations numériques
+
+La méthode de résolution numérique de l'équation différentielle associée au "modèle Newton" peut alors être lancée.
+```
+>>> astro.simu_systsol_save(Planetes='Planetes.csv', methode='rk8')
+Soleil : 132712440041.2794 km^3 s^-2
+Mercure : 22031.868551 km^3 s^-2
+Venus : 324858.592 km^3 s^-2
+Terre : 398600.435507 km^3 s^-2
+Lune : 4902.800118 km^3 s^-2
+Mars : 42828.375816 km^3 s^-2
+Jupiter : 126712764.1 km^3 s^-2
+Saturne : 37940584.8418 km^3 s^-2
+Uranus : 5794556.4 km^3 s^-2
+Neptune : 6836527.10058 km^3 s^-2
+début de la simulation numérique
+fin de la simulation à 0:02:23.666915 (hh:mm:ss.ms)
+>>>
 ```
 
