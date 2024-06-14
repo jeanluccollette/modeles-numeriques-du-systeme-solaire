@@ -28,5 +28,16 @@ L'objectif est de montrer que la modélisation simplifiée qui est proposée don
 
 ### Le "notebook"
 
-Dans le dossier **Notebook**, on trouvera le fichier **Systeme_solaire.ipynb**. Ce fichier est directement utilisable dans **Google Colaboratory**, par exemple. Son exécution génère en effet tous les fichiers de données nécessaires pour effectuer des comparaisons entre les éphémérides délivrées par JPL et les résultats de simulation du "modèle Newton" proposé.
+Dans le dossier **Notebook**, on trouvera le fichier **Systeme_solaire.ipynb**. Ce fichier est directement utilisable dans **Google Colaboratory**, par exemple. Son exécution génère en effet tous les fichiers de données nécessaires pour effectuer des comparaisons entre les éphémérides délivrées par le JPL et les résultats de simulation du "modèle Newton" proposé.
+
+### Le code
+
+Dans le dossier **Code**, on trouvera le fichier **astro.py** rassemblant toutes les fonctions permettant la récupération des éphémérides du JPL associées au modèle DE, les simulations numériques du "modèle Newton" et les comparaisons entre ces deux modèles.
+
+Dans une console Python, il suffit d'importer le module "astro" avec la ligne ci-dessous.
+```
+import astro
+```
+
+Le fichier **lance_astro.py"" donne des exemples d'appel aux différentes fonctions disponibles dans ce module.
 
