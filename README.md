@@ -119,7 +119,7 @@ début de la simulation numérique
 fin de la simulation à 0:02:23.666915 (hh:mm:ss.ms)
 ```
 
-Les résultats de cette résolution sont stockés dans des fichiers **\<planetes\>_simu.csv**.
+Les résultats de cette résolution sont stockés dans des fichiers **\<planete\>_simu.csv**.
 
 ### Les comparaisons
 
