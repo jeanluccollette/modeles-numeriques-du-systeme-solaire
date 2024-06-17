@@ -171,4 +171,6 @@ astro.compare(Astre1_a='Soleil_k', Astre2_a='Mercure_k',Astre1_b='Soleil_k_simu'
 
 ![](Data/SMK_1.png)
 ![](Data/SMK_2.png)
+
+L'erreur est d'environ 2 mètres au bout de 20 ans.
 ![](Data/SMK_3.png)
