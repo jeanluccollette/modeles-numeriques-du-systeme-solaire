@@ -150,4 +150,6 @@ On remarquera l'écart de 8,6 secondes d'arc sur la longitude du périhélie de 
 ![](Data/SM_5.png)
 ![](Data/SM_6.png)
 
+#### Comparaison avec une orbite de Képler 
 
+Pour évaluer la précision des méthodes de résolution numérique, le calcul exact d'une orbite avec seulement deux astres présents (voir [Mouvement képlerien](https://fr.wikipedia.org/wiki/Mouvement_k%C3%A9pl%C3%A9rien)) peut être comparée avec la résolution numérique du même problème.
