@@ -178,6 +178,6 @@ L'erreur est d'environ 2 mètres au bout de 20 ans.
 
 On peut constater à cette occasion que la modélisation par une simple orbite de Képler ne peut pas suffire si on veut un calcul précis des éphémérides.
 
-![](Data/SMK_1.png)
-![](Data/SMK_2.png)
-![](Data/SMK_3.png)
+![](Data/SMKE_1.png)
+![](Data/SMKE_2.png)
+![](Data/SMKE_3.png)
