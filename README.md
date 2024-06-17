@@ -177,6 +177,9 @@ L'erreur est d'environ 2 mètres au bout de 20 ans.
 ![](Data/SMK_3.png)
 
 On peut constater à cette occasion que la modélisation par une simple orbite de Képler ne peut pas suffire si on veut un calcul précis des éphémérides.
+```
+astro.compare(Astre1_a='Soleil', Astre2_a='Mercure',Astre1_b='Soleil_k', Astre2_b='Mercure_k')
+```
 
 ![](Data/SMKE_1.png)
 ![](Data/SMKE_2.png)
