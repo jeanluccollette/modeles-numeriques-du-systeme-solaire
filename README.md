@@ -154,14 +154,21 @@ On remarquera l'écart de 8,6 secondes d'arc sur la longitude du périhélie de 
 
 Pour évaluer la précision des méthodes de résolution numérique, le calcul exact d'une orbite avec seulement deux astres présents (voir [Mouvement képlerien](https://fr.wikipedia.org/wiki/Mouvement_k%C3%A9pl%C3%A9rien)) peut être comparée avec la résolution numérique du même problème.
 
+On génère par exemple les fichiers **Soleil_k.csv** et **Mercure_k.csv** correspondant à une orbite de Képler fictive où Mercure seule tourne autour du Soleil, avec les conditions initiales lues dans la première ligne des fichiers **Mercure.csv** et **Soleil.csv**
 ```
 astro.orbite_kepler(Astre1='Soleil', Astre2='Mercure', Planetes='Planetes.csv',Astre1_k='Soleil_k', Astre2_k='Mercure_k', Planetes_k='Planetes_sol_mer.csv')
 ```
 
+On réalise une simulation numérique directe du mouvement dans les mêmes conditions.
 ```
 astro.simu_systsol_save(Planetes='Planetes_sol_mer.csv', methode='rk8')
 ```
 
+On compare la solution exacte à la solution obtenue par résolution numérique directe des équations du mouvement.
 ```
 astro.compare(Astre1_a='Soleil_k', Astre2_a='Mercure_k',Astre1_b='Soleil_k_simu', Astre2_b='Mercure_k_simu')
 ```
+
+![](Data/SMK_1.png)
+![](Data/SMK_2.png)
+![](Data/SMK_3.png)
