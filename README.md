@@ -32,7 +32,7 @@ L'objectif est de montrer que la modélisation simplifiée qui est proposée don
 
 ### Le notebook
 
-Dans le dossier **Notebook**, on trouvera le fichier **Systeme_solaire.ipynb**. Ce fichier est directement utilisable dans **Google Colaboratory**, par exemple. Son exécution génère en effet tous les fichiers de données nécessaires pour effectuer des comparaisons entre les éphémérides délivrées par le JPL et les résultats de simulation du "modèle Newton" proposé.
+Dans le dossier **Notebook**, on trouvera le fichier [**Systeme_solaire.ipynb**](Notebook/Systeme_solaire.ipynb). Ce fichier est directement utilisable dans **Google Colaboratory**, par exemple. Son exécution génère en effet tous les fichiers de données nécessaires pour effectuer des comparaisons entre les éphémérides délivrées par le JPL et les résultats de simulation du "modèle Newton" proposé.
 
 ### Le code
 
