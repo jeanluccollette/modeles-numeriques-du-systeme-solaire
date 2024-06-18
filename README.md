@@ -36,7 +36,7 @@ Dans le dossier **Notebook**, on trouvera le fichier [**Systeme_solaire.ipynb**]
 
 ### Le code
 
-Dans le dossier **Code**, on trouvera le fichier **astro.py** rassemblant toutes les fonctions permettant la récupération des éphémérides du **JPL** associées au modèle **DE**, les simulations numériques du "modèle Newton" et les comparaisons entre ces deux modèles.
+Dans le dossier **Code**, on trouvera le fichier [**astro.py**](Code/astro.py) rassemblant toutes les fonctions permettant la récupération des éphémérides du **JPL** associées au modèle **DE**, les simulations numériques du "modèle Newton" et les comparaisons entre ces deux modèles.
 
 Dans une console Python, il suffit d'importer le module "astro" avec la ligne ci-dessous.
 
@@ -44,7 +44,7 @@ Dans une console Python, il suffit d'importer le module "astro" avec la ligne ci
 >>> import astro
 ```
 
-Le fichier **lance_astro.py** donne des exemples d'appel aux différentes fonctions disponibles dans ce module.
+Le fichier [**lance_astro.py**](Code/lance_astro.py) donne des exemples d'appel aux différentes fonctions disponibles dans ce module.
 
 ### Les données initiales du "modèle Newton"
 
