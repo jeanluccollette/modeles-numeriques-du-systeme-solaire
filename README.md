@@ -19,7 +19,7 @@ $$
 $$
 
 $$
-\dfrac{d\vec{v_n}}{dt}=\sum_{1\leq k \leq N,k \neq n}-\mu_k\dfrac{\vec{p_n}-\vec{p_k}}{\left\lVert\vec{p_n}-\vec{p_k}\right\lVert^3
+\dfrac{d\vec{v_n}}{dt}=\sum_{1\leq k \leq N,k \neq n}-\mu_k\dfrac{\vec{p_n}-\vec{p_k}}{\left\lVert\vec{p_n}-\vec{p_k}\right\lVert^3}
 $$
 
 Ce modèle fait donc appel à la mécanique classique et aux lois de Newton pour la gravitation. Les valeurs des paramètres gravitationnels standards $\mu_k$ sont repris de l'article ["The JPL Planetary and Lunar Ephemerides DE440 and DE441"](https://iopscience.iop.org/article/10.3847/1538-3881/abd414/pdf) (Table 2, page 5).
