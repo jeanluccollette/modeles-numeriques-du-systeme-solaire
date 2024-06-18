@@ -35,7 +35,8 @@ Dans le dossier **Notebook**, on trouvera le fichier **Systeme_solaire.ipynb**. 
 Dans le dossier **Code**, on trouvera le fichier **astro.py** rassemblant toutes les fonctions permettant la récupération des éphémérides du **JPL** associées au modèle **DE**, les simulations numériques du "modèle Newton" et les comparaisons entre ces deux modèles.
 
 Dans une console Python, il suffit d'importer le module "astro" avec la ligne ci-dessous.
-```
+
+```python
 >>> import astro
 ```
 
@@ -44,7 +45,8 @@ Le fichier **lance_astro.py** donne des exemples d'appel aux différentes foncti
 ### Les données initiales du "modèle Newton"
 
 Le fichier **Planetes.csv** peut être généré "à la main" ou via la fonction **astro.planetes()**. Il comprend la liste des planètes prises en compte dans le "modèle Newton". La colonne "id" est un identifiant que l'on peut récupérer avec la fonction **astro.liste_id()**.
-```
+
+```python
 >>> import astro
 >>> astro.planetes(Planetes='Planetes.csv')
        Nom            mu      units   id
@@ -64,7 +66,7 @@ Le fichier **Planetes.csv** peut être généré "à la main" ou via la fonction
 
 Via des requêtes internet, les données relatives aux planètes présentes dans le fichier **Planetes.csv** sont téléchargées, puis stockées dans des fichiers **\<planete\>.csv**. On précise les dates de début et de fin, ainsi que le pas temporel.
 
-```
+```python
 >>> import astro
 >>> astro.convert_req_jpl_to_csv(Planetes='Planetes.csv', debut='2020-01-01 00:00:00', fin='2040-01-01 00:00:00', pas='8 h')
 Données pour Soleil
@@ -81,7 +83,7 @@ Données pour Neptune
 
 Les informations récupérées à chaque instant précisé dans la colonne **DATES** sont des coordonnées **X**, **Y** et **Z**, exprimées en km. Les vitesses **VX**, **VY** et **VZ** sont exprimées en km/s. La colonne **JDTDB** (Julian Date for Barycentric Dynamical Time) ne sera pas utilisée.
 
-```
+```python
 >>> astro.lire_info_csv('Terre.csv')
               JDTDB                DATES             X             Y             Z         VX        VY        VZ
 0      2.458850e+06  2020-01-01 00:00:00 -2.545334e+07  1.460913e+08  -2712.536258 -29.863382 -5.165822  0.001136
@@ -103,7 +105,7 @@ Les informations récupérées à chaque instant précisé dans la colonne **DAT
 
 La méthode de résolution numérique de l'équation différentielle associée au "modèle Newton" peut alors être lancée. Les conditions initiales sont obtenues en considérant la première ligne de tous les fichiers **\<planete\>.csv**. Le pas de calcul est constant et vaut le pas choisi pour ces fichiers lors de leur téléchargement. La méthode peut être "rk4" ou "rk8" (voir le fichier astro.py pour les détails).
 
-```
+```python
 >>> astro.simu_systsol_save(Planetes='Planetes.csv', methode='rk8')
 Soleil : 132712440041.2794 km^3 s^-2
 Mercure : 22031.868551 km^3 s^-2
@@ -127,7 +129,7 @@ Les résultats de cette résolution sont stockés dans des fichiers **\<planete\
 
 La trajectoire simulée et les écarts à la trajectoire fournie par le JPL sont représentés.
 
-```
+```python
 >>> astro.compare(Astre1_a='Terre',Astre2_a='Lune',Astre1_b='Terre_simu',Astre2_b='Lune_simu')
 ```
 
@@ -139,7 +141,7 @@ La trajectoire simulée et les écarts à la trajectoire fournie par le JPL sont
 
 On remarquera l'écart de 8,6 secondes d'arc sur la longitude du périhélie de Mercure, au bout de 20 ans. Cet écart est alors de 43 secondes d'arc sur 100 ans, ce qui correspond bien à l'écart qu'avait constaté Urbain le Verrier, entre les prédictions d'un modèle fondé sur les lois de Newton et l'observation.
 
-```
+```python
 >>> astro.param_orb_comp(Astre1_a='Soleil', Astre2_a='Mercure', Astre1_b='Soleil_simu', Astre2_b='Mercure_simu',Planetes='Planetes.csv')
 ```
 
@@ -155,17 +157,20 @@ On remarquera l'écart de 8,6 secondes d'arc sur la longitude du périhélie de 
 Pour évaluer la précision des méthodes de résolution numérique, le calcul exact d'une orbite avec seulement deux astres présents (voir [Mouvement képlerien](https://fr.wikipedia.org/wiki/Mouvement_k%C3%A9pl%C3%A9rien)) peut être comparée avec la résolution numérique du même problème.
 
 On génère par exemple les fichiers **Soleil_k.csv** et **Mercure_k.csv** correspondant à une orbite de Képler fictive où Mercure seule tourne autour du Soleil, avec les conditions initiales lues dans la première ligne des fichiers **Mercure.csv** et **Soleil.csv**.
-```
+
+```python
 astro.orbite_kepler(Astre1='Soleil', Astre2='Mercure', Planetes='Planetes.csv',Astre1_k='Soleil_k', Astre2_k='Mercure_k', Planetes_k='Planetes_sol_mer.csv')
 ```
 
 On réalise une simulation numérique directe du mouvement dans les mêmes conditions.
-```
+
+```python
 astro.simu_systsol_save(Planetes='Planetes_sol_mer.csv', methode='rk8')
 ```
 
 On compare la solution exacte à la solution obtenue par résolution numérique directe des équations du mouvement.
-```
+
+```python
 astro.compare(Astre1_a='Soleil_k', Astre2_a='Mercure_k',Astre1_b='Soleil_k_simu', Astre2_b='Mercure_k_simu')
 ```
 
@@ -177,7 +182,8 @@ L'erreur est d'environ 2 mètres au bout de 20 ans.
 ![](Data/SMK_3.png)
 
 On peut constater à cette occasion que la modélisation par une simple orbite de Képler ne peut pas suffire si on veut un calcul précis des éphémérides.
-```
+
+```python
 astro.compare(Astre1_a='Soleil', Astre2_a='Mercure',Astre1_b='Soleil_k', Astre2_b='Mercure_k')
 ```
 
