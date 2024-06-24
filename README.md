@@ -30,7 +30,7 @@ L'objectif est de montrer que la modélisation simplifiée qui est proposée don
 
 ## Un peu d'histoire
 
-Si on s'intéresse en particulier au mouvement de Mercure, Urbain le Verrier avait écrit une [Théorie du mouvement de Mercure](https://gallica.bnf.fr/ark:/12148/bpt6k9609359q), où la confrontation entre modéle et observation s'effectuait notamment par le relevé des instants associés aux transits de Mercure devant le Soleil (voir les pages 97 et suivantes "Des passages de Mercure sur le Soleil").
+Si on s'intéresse en particulier au mouvement de Mercure, Urbain le Verrier avait écrit une [Théorie du mouvement de Mercure](https://gallica.bnf.fr/ark:/12148/bpt6k9609359q), où la confrontation entre modéle et observation s'effectuait notamment par le relevé des instants associés aux transits de Mercure devant le Soleil (voir les pages 97 et suivantes : "Des passages de Mercure sur le Soleil").
 
 ## Les programmes Python
 
