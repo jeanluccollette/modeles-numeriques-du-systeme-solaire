@@ -153,6 +153,8 @@ On remarquera l'écart de 8,6 secondes d'arc sur la longitude du périhélie de 
 >>> astro.param_orb_comp(Astre1_a='Soleil', Astre2_a='Mercure', Astre1_b='Soleil_simu', Astre2_b='Mercure_simu',Planetes='Planetes.csv')
 ```
 
+Les courbes "a" correspondent aux données fournies par le JPL. Les courbes "b" correspondent aux résultats de la simulation numérique du "modèle Newton".
+
 ![](Data/SM_1.png)
 ![](Data/SM_2.png)
 ![](Data/SM_3.png)
