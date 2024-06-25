@@ -159,6 +159,9 @@ Les courbes "a" correspondent aux données fournies par le JPL. Les courbes "b" 
 ![](Data/SM_2.png)
 ![](Data/SM_3.png)
 ![](Data/SM_4.png)
+
+Par définition, la longitude du périhélie est la somme de la longitude du noeud ascendant et de l'argument du périhélie, même si ces deux angles sont définis dans deux plans différents.
+
 ![](Data/SM_5.png)
 ![](Data/SM_6.png)
 
