@@ -32,6 +32,8 @@ L'objectif est de montrer que la modélisation simplifiée qui est proposée don
 
 Si on s'intéresse en particulier au mouvement de Mercure, l'astronome et mathématicien Urbain le Verrier avait écrit une [Théorie du mouvement de Mercure](https://gallica.bnf.fr/ark:/12148/bpt6k9609359q), où la confrontation entre modéle et observation s'effectuait notamment par le relevé des instants associés aux transits de Mercure devant le Soleil (voir les pages 97 et suivantes : "Des passages de Mercure sur le Soleil").
 
+Pour remonter plus loin dans le passé, Richard Taillet propose un cours sur [l'histoire de la cosmologie](https://videos.univ-grenoble-alpes.fr/la-formation/309-histoire-de-la-cosmologie/).
+
 ## Les programmes Python
 
 ### Le notebook
