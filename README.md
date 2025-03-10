@@ -54,7 +54,7 @@ Le fichier [**lance_astro.py**](Code/lance_astro.py) donne des exemples d'appel 
 
 ### Problèmes éventuels d'accès à l'API du JPL
 
-La solution est disponible sur ce site :
+Le cas échéant, une solution possible est proposée sur ce site :
 
 https://sslinsights.com/fix-certificate-verify-failed-error-in-python/
 
