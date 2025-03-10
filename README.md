@@ -55,14 +55,18 @@ Le fichier [**lance_astro.py**](Code/lance_astro.py) donne des exemples d'appel 
 ### Problèmes éventuels d'accès à l'API du JPL
 
 La solution est disponible sur ce site :
+
 https://sslinsights.com/fix-certificate-verify-failed-error-in-python/
+
 "How to Fix SSL CERTIFICATE_VERIFY_FAILED Error in Python"
 
 "How do I fix Python SSL certificate error in Windows?
 Install the certifi package using “pip install certifi”. Update Python’s certificates with “pip install --upgrade certifi”. These steps will update the root certificates and resolve most SSL verification errors."
 
 Après mise à jour, ça fonctionne !
+```python
 pip install --upgrade certifi
+```
 
 ### Les données initiales du "modèle Newton"
 
