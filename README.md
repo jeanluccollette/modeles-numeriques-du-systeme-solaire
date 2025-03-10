@@ -52,6 +52,18 @@ Dans une console Python, il suffit d'importer le module "astro" avec la ligne ci
 
 Le fichier [**lance_astro.py**](Code/lance_astro.py) donne des exemples d'appel aux différentes fonctions disponibles dans ce module.
 
+### Problèmes éventuels d'accès à l'API du JPL
+
+La solution est disponible sur ce site :
+https://sslinsights.com/fix-certificate-verify-failed-error-in-python/
+"How to Fix SSL CERTIFICATE_VERIFY_FAILED Error in Python"
+
+"How do I fix Python SSL certificate error in Windows?
+Install the certifi package using “pip install certifi”. Update Python’s certificates with “pip install --upgrade certifi”. These steps will update the root certificates and resolve most SSL verification errors."
+
+Après mise à jour, ça fonctionne !
+pip install --upgrade certifi
+
 ### Les données initiales du "modèle Newton"
 
 Le fichier **Planetes.csv** peut être généré "à la main" ou via la fonction **astro.planetes()**. Il comprend la liste des planètes prises en compte dans le "modèle Newton". La colonne "id" est un identifiant que l'on peut récupérer avec la fonction **astro.liste_id()**.
